@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-items {
+    @apply transition duration-75 hover:animate-bounce md:p-2;
+  }
+  .grid-items {
+    @apply mx-3 mt-6 flex skew-x-3 flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0;
+  }
+  .name-items {
+    @apply mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50;
+  }
+  .describe-items {
+    @apply mb-4 text-base text-neutral-600 dark:text-neutral-200;
+  }
+  .about-items {
+    @apply items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex;
+  }
+}

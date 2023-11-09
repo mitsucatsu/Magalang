@@ -1,0 +1,11 @@
+.places img {
+  border-radius: 1rem;
+  filter: brightness(30%); /* You can adjust the percentage as needed */
+}
+
+header {
+  background-image: url(pics/magalang.gif);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
