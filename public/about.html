@@ -1,11 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourism Landing Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="extrastyle.css" />
+    
+
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="about/base.css" />
+   <link rel="stylesheet" href="about/main.css" />
+   <link rel="stylesheet" href="about/vendor.css" />
+   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="extrastyle.css" />
+
   </head>
   <body>
     <!-- Navbar -->
@@ -21,301 +29,259 @@
       </div>
     </nav>
     <div class="px-14 py-7 dark:bg-gray-900">
-      <section class="bg-white dark:bg-gray-900">
-        <div class="">
-          <div class="mx-auto mb-8 max-w-screen-sm text-center lg:mb-16">
-            <h2
-              class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-            >
-              Softdev-Group 6
-            </h2>
-            <p
-              class="font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16"
-            >
-              Magalang Tourism Project
+      <!-- intro section
+   ================================================== -->
+    <section id="intro">
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h5>Group 6</h5>
+            <h1>Magalang</h1>
+
+            <p class="intro-position">
+              <span>Tourism Hub</span>
             </p>
-          </div>
-          <div class="mb-6 grid gap-8 md:grid-cols-2 lg:mb-16">
-            <div
-              class="items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex"
-            >
-              <a href="https://www.facebook.com/mitsdc156">
-                <img
-                  class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="pics/mits.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-                >
-                  <a href="https://www.facebook.com/mitsdc156"
-                    >Mitch Dela Cruz</a
-                  >
-                </h3>
-                <span class="text-gray-500 dark:text-gray-400">Leader</span>
-                <p
-                  class="mb-4 mt-3 font-light text-gray-500 dark:text-gray-400"
-                >
-                  ( ͡ಥ ͜ʖ ͡ಥ)
-                </p>
-                <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
 
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex"
+            <a class="button stroke smoothscroll" href="#about" title=""
+              >Members of Magalang</a
             >
-              <a href="https://www.facebook.com/rets.sabile">
-                <img
-                  class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="pics/raf.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-                >
-                  <a href="https://www.facebook.com/rets.sabile"
-                    >Rafael Enrique</a
-                  >
-                </h3>
-                <span class="text-gray-500 dark:text-gray-400">Member</span>
-                <p
-                  class="mb-4 mt-3 font-light text-gray-500 dark:text-gray-400"
-                >
-                  (☞ﾟヮﾟ)☞
-                </p>
-                <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex"
-            >
-              <a href="https://www.facebook.com/mark.manalese1/">
-                <img
-                  class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="pics/mark.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-                >
-                  <a href="https://www.facebook.com/mark.manalese1/"
-                    >Mark Manalese</a
-                  >
-                </h3>
-                <span class="text-gray-500 dark:text-gray-400">Member</span>
-                <p
-                  class="mb-4 mt-3 font-light text-gray-500 dark:text-gray-400"
-                >
-                  :>
-                </p>
-                <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="items-center rounded-lg bg-gray-50 shadow dark:border-gray-700 dark:bg-gray-800 sm:flex"
-            >
-              <a href="https://www.facebook.com/francis.luis.146">
-                <img
-                  class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="pics/cis.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
-                <h3
-                  class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-                >
-                  <a href="https://www.facebook.com/francis.luis.146"
-                    >Francis Henson</a
-                  >
-                </h3>
-                <span class="text-gray-500 dark:text-gray-400">Member</span>
-                <p
-                  class="mb-4 mt-3 font-light text-gray-500 dark:text-gray-400"
-                >
-                  ( ง`꒳´) ว
-                </p>
-                <ul class="flex space-x-4 sm:mt-0">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                    >
-                      <svg
-                        class="h-5 w-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
-    </div>
-    <!-- Navbar -->
+      </div>
+      <!-- /intro-content -->
 
-    <!-- FOOTER -->
-    <div class="bg-gray-800 p-1 text-center font-rubik text-xs text-white">
-      <h2>Book Your Dream Vacation</h2>
-      <p>Contact us today to plan your perfect getaway.</p>
-      <a href="contact.html" link="">Contact Us</a>
+      <ul class="intro-social">
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+      <!-- /intro-social -->
+    </section>
+    <!-- /intro -->
 
-      <p>&copy; 2023 Tourism Hub. All rights reserved.</p>
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>About</h5>
+          <h1>The Magalang Members</h1>
+
+          <div class="intro-info">
+            <img
+              src="pics/mark.jpg"
+              class="profile-image"
+              alt="Profile Picture"
+            />
+
+            <p class="lead">
+              You could call me "Merk". I am a Computer Engineering Student at
+              Holy Angel University
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p></p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Mark Manalese</span>
+            </li>
+            <li>
+              <strong>School</strong>
+              <span>Holy Angel University</span>
+            </li>
+            <li>
+              <strong>Occupation:</strong>
+              <span>Student</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>mymanalese@student.hau.edu.ph</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <div class="intro-info">
+            <img
+              src="pics/mits.jpg"
+              class="profile-image"
+              alt="Profile Picture"
+            />
+
+            <p class="lead">
+              Pursuing a degree in Computer Engineering. I'm on a journey to
+              explore the world of computer engineering and make a positive
+              impact. I have actively contributed to the development of this
+              project by working on the HTML code and web design aspects.
+              Specifically, I have designed and structured some parts of the web
+              pages to ensure an appealing and user-friendly experience. My
+              commitment to the project includes ongoing collaboration with the
+              team to achieve our goals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p></p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Mitch Dela Cruz</span>
+            </li>
+            <li>
+              <strong>School</strong>
+              <span>Holy Angel University</span>
+            </li>
+            <li>
+              <strong>Occupation:</strong>
+              <span>Student</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>mmdelacruz5@student.hau.edu.ph</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <div class="intro-info">
+            <img
+              src="pics/raf.jpg"
+              class="profile-image"
+              alt="Profile Picture"
+            />
+
+            <p class="lead">
+              I'm Rafael Enrique Sabile, On a journey to explore the vast world
+              of coding and technology. Still honing my skills and keeping up
+              with the advancements in the tech world. I aspire to help everyone
+              and make them happy. Outside of coding I'm interested in playing
+              games and visiting places.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p></p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Rafael Sabile</span>
+            </li>
+            <li>
+              <strong>School</strong>
+              <span>Holy Angel University</span>
+            </li>
+            <li>
+              <strong>Occupation:</strong>
+              <span>Student</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>rtsabile1@student.hau.edu.ph</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <div class="intro-info">
+            <img
+              src="pics/cis.jpg"
+              class="profile-image"
+              alt="Profile Picture"
+            />
+
+            <p class="lead">
+              I'm Francis Henson, Computer Engineering student with a profound
+              passion for technology and a relentless drive to innovate in the
+              ever-evolving world of computer. From a young age, I have been
+              captivated by the power of computers and their ability to
+              transform the way we live, work, and communicate. This fascination
+              led me to pursue a career in computer engineering, where I am
+              dedicated to not only mastering the intricacies of hardware and
+              software but also pushing the boundaries of what technology can
+              achieve.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p></p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Francis Henson</span>
+            </li>
+            <li>
+              <strong>School</strong>
+              <span>Holy Angel University</span>
+            </li>
+            <li>
+              <strong>Occupation:</strong>
+              <span>Student</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>fbhenson@student.hau.edu.ph</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer
+   ================================================== -->
+
+    <footer>
+      <div class="text-center baba">
+        <p><b>Book Your Dream Vacation</b></p>
+        <p>Contact us today to plan your perfect getaway.</p>
+        <a href="contact.html" link="">Contact Us</a>
+        <p>&copy; 2023 Tourism Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
+
+    <!-- Java Script
+   ================================================== -->
+    <!-- <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script> -->
   </body>
 </html>
